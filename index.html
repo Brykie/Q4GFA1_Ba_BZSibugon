@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+    <form id="funnyform" onsubmit="return sub()">
+        <fieldset>
+            <legend>Sign-Up!</legend>
+            <h4>Want FREE Cat Pictures?</h4>
+
+            <label for="fname">Name:</label><br>
+            <input type="text" id="name" placeholder="Full Name" onblur="checkval1()" onfocus="checkval2()">
+            <br><br>
+
+            <label for="username">Preferred Name:</label><br>
+            <input type="text" id="username" placeholder="Username" onblur="checkval1()" onfocus="checkval2()">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="Email" onblur="checkval1()" onfocus="checkval2()">
+            <br><br>
+
+            <label for="address">Address</label><br>
+            <input type="text" id="address" placeholder="Address" onblur="checkval1()" onfocus="checkval2()">
+            <br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Password" onblur="checkval1()" onfocus="checkval2()">
+            <br>
+            <label><input type="checkbox" onclick="showpassword()"> Show Password</label>
+            <br><br>
+
+            <label for="interests">Interests:</label><br>
+            <textarea cols="50" rows="4" id="interests" placeholder="Your Interests" onblur="checkval1()" onfocus="checkval2()"></textarea>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value=" ">Select A Value:</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                <option value="Prefer-Not-To-Mention">Prefer not to mention</option>
+            </select>
+            <br><br>
+
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Reset" onclick="res()">
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Information</legend>
+        <div class="display">
+            <div class="output" id="noutput">Name: </div>
+            <div class="output" id="unoutput">Username: </div>
+            <div class="output" id="emoutput">Email: </div>
+            <div class="output" id="adoutput">Address: </div>
+            <div class="output" id="pwoutput">Password: </div>
+            <div class="output" id="intoutput">Interests: </div>
+            <div class="output" id="genoutput">Gender: </div>
+        </div>
+    </fieldset>
+    </div>
+
+</body>
+</html>
